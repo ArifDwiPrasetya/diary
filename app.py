@@ -52,7 +52,7 @@ def save_diary():
     else :
         newProfileName = 0
 
-    time = today.strftime('%Y.%M.%d')
+    time = today.strftime('%Y.%m.%d')
     doc = {
         'file' : newFileName,
         'profile': newProfileName,
