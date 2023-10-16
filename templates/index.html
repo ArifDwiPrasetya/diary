@@ -7,7 +7,7 @@
     <meta property="og:description" content="The website to write your daily activities" />
     <!-- Saya Menggunakan CDN Link untuk tag og image pada glitch -->
     <!-- <meta property="og:image" content="{CDN LINK}" /> -->
-    
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -49,6 +49,7 @@
                         let content = articles[i]['content']
                         let file = articles[i]['file'] || "default-image.jpg";
                         let profile = articles[i]['profile'] || "default-profile.jpg";
+                        let time = articles[i]['time'] || "????.??.??";
                         let temp_html = `<div class="col-4">
                 <div class="card">
                     <img src="../static/${file}"
@@ -58,7 +59,7 @@
                     <div class="card-body">
                         <h5 class="card-title">${title}</h5>
                         <p class="card-text">${content}</p>
-                        <h6 class="card-subtitle mb-2 text-muted">2022.02.15</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">${time}</h6>
                     </div>
                 </div>
             </div>`
